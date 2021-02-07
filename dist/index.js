@@ -7,6 +7,14 @@ var plugin = {
                 }
                 return this.origin.code.apply(this, arguments)
             },
+            html: function (html) {
+                var regex = /<iframe.*?>[\s\S]*?<\/iframe>/
+                if (regex.test(html)) {
+                    return ""
+                } else {
+                    return html
+                }
+            },
         },
     },
 }

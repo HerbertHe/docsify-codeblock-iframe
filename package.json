@@ -1,6 +1,6 @@
 {
   "name": "docsify-codeblock-iframe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "markdown codeblock-iframe syntax support for docsify!",
   "main": "dist/index.js",
   "repository": "https://github.com/HerbertHe/docsify-codeblock-iframe.git",
