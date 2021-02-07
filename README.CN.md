@@ -6,24 +6,24 @@
 [![cnpmDownload](https://cnpmjs.org/badge/d/docsify-codeblock-iframe.svg)](https://cnpmjs.org/package/docsify-codeblock-iframe)
 [![jsdelivr](https://data.jsdelivr.com/v1/package/npm/docsify-codeblock-iframe/badge)](https://www.jsdelivr.com/package/npm/docsify-codeblock-iframe)
 
-> A plugin that provides markdown extra codeblock-iframe syntax support for docsify, just for supporting iframe rendering securely!
+> 一个通过markdown扩展语法为docsify提供更加安全进行iframe渲染的插件
 
 [简体中文](./README.CN.md) | [English](./README.md)
 
-## Try it
+## 体验一下
 
 [Demo](https://herberthe.github.io/docsify-codeblock-iframe/demo)
 
-## Usage
+## 使用方法
 
-Import dependencies from CDN
+插入script标签引用
 
 ```html
 <script src="//cdn.jsdelivr.net/npm/codeblock-iframe@latest/dist/index.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify-codeblock-iframe@latest/dist/index.min.js"></script>
 ```
 
-Following formats of `src` are supported!
+`src`符合下面的格式才会被支持
 
 ```text
 www.baidu.com
@@ -32,9 +32,9 @@ http://www.baidu.com
 https://www.baidu.com
 ```
 
-- iframe Attributes
+- iframe属性
 
-| Attributes   |
+| 属性名       |
 | ------------ |
 | src          |
 | height       |
@@ -51,17 +51,17 @@ https://www.baidu.com
 | srcdoc       |
 | textContent  |
 
-## Why To Do
+## 为什么要写这个库
 
-To be honest, Markdown supports HTML tags natively! But here are some issues we have to face as followed:
+讲道理, Markdown原生就支持HTML! 但是下面场景我们会遇到一些问题:
 
-1. If I didn't want my users insert ads in their posts via iframe but supported them using codepen to share their codes, how could I do?
-2. Sometimes we try to insert iframe in some markdown editor. For immediately rendering, the browser will send a lot of GET requests to our target website when we inputting, how could we optimize? Even it causes our page breakdown when developing and using SSR
+1. 如果我不想让我的用户通过iframe给我们的网站插入广告, 但是我们支持他们用codepen来分享自己的代码, 咋办?
+2. 有时候我们想在一些markdown编辑器中插入iframe。为了即时渲染, 浏览器会在我们输入的时候发送大量的GET请求给我们的目标网站, 我们如何去做优化？甚至于当我们开发的时候开启SSR渲染页面, 可能会导致页面崩溃
 
-## How To Do
+## 怎么实现
 
-Code Block Renderer is easy for us to extend native markdown syntax, so we can limit the frequency of iframe rendering in this way.
+代码块渲染对我们拓展markdown原生语法非常简单, 所以我们可以通过上面的策略来限制iframe渲染的频率
 
-## Thanks
+## 感谢
 
 - [iarna-toml](https://github.com/iarna/iarna-toml): Better TOML parsing and stringifying all in that familiar JSON interface.

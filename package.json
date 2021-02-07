@@ -1,0 +1,23 @@
+{
+  "name": "docsify-codeblock-iframe",
+  "version": "1.0.0",
+  "description": "markdown codeblock-iframe syntax support for docsify!",
+  "main": "dist/index.js",
+  "repository": "https://github.com/HerbertHe/docsify-codeblock-iframe.git",
+  "author": "HerbertHe <Herbert.He0229@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HerbertHe/docsify-codeblock-iframe/issues"
+  },
+  "homepage": "https://github.com/HerbertHe/docsify-codeblock-iframe",
+  "scripts": {
+    "build": "terser dist/index.js -o dist/index.min.js"
+  },
+  "keywords": [
+    "docsify",
+    "iframe",
+    "toml2iframe",
+    "codeblock-iframe",
+    "toml"
+  ]
+}
